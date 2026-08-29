@@ -1,0 +1,11 @@
+{
+  "external_inquiry_id": "DEMO-2026-001",
+  "customer_name": "Haruka Sato",
+  "email": "haruka@example.com",
+  "phone_normalized": "09000000000",
+  "product_name": "Example Residence",
+  "status": "synced",
+  "crm_account_id": "<REDACTED_DEMO_ID>",
+  "crm_inquiry_id": "<REDACTED_DEMO_ID>",
+  "crm_task_id": "<REDACTED_DEMO_ID>"
+}

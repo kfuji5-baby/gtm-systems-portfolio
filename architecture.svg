@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<style>
+  .box { fill:#ffffff; stroke:#334155; stroke-width:2; rx:16; }
+  .safe { fill:#f8fafc; stroke:#334155; stroke-width:2; rx:16; }
+  .review { fill:#fff7ed; stroke:#9a3412; stroke-width:2; rx:16; }
+  .text { font-family:Arial,sans-serif; font-size:20px; fill:#0f172a; text-anchor:middle; }
+  .small { font-family:Arial,sans-serif; font-size:16px; fill:#475569; text-anchor:middle; }
+  .arrow { stroke:#64748b; stroke-width:3; marker-end:url(#arrow); fill:none; }
+</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect class="safe" x="40" y="80" width="150" height="90"/><text class="text" x="115" y="118">Inbound</text><text class="small" x="115" y="145">email inquiry</text>
+<rect class="safe" x="240" y="80" width="170" height="90"/><text class="text" x="325" y="113">Parse +</text><text class="text" x="325" y="139">validate</text>
+<rect class="safe" x="460" y="80" width="170" height="90"/><text class="text" x="545" y="113">Deduplicate +</text><text class="text" x="545" y="139">stage</text>
+<rect class="safe" x="680" y="80" width="170" height="90"/><text class="text" x="765" y="113">Normalize +</text><text class="text" x="765" y="139">match</text>
+<rect class="safe" x="900" y="80" width="220" height="90"/><text class="text" x="1010" y="113">Salesforce sync</text><text class="small" x="1010" y="143">records + relationships</text>
+<path class="arrow" d="M190 125 L240 125"/><path class="arrow" d="M410 125 L460 125"/><path class="arrow" d="M630 125 L680 125"/><path class="arrow" d="M850 125 L900 125"/>
+<rect class="review" x="675" y="255" width="180" height="90"/><text class="text" x="765" y="292">Manual review</text><text class="small" x="765" y="320">low confidence / tie</text>
+<path class="arrow" d="M765 170 L765 255"/>
+<rect class="safe" x="900" y="255" width="220" height="90"/><text class="text" x="1010" y="292">Owner + task</text><text class="small" x="1010" y="320">immediate follow-up</text>
+<path class="arrow" d="M1010 170 L1010 255"/>
+<rect class="safe" x="900" y="405" width="220" height="80"/><text class="text" x="1010" y="437">Prioritization</text><text class="small" x="1010" y="463">CRM UX + reporting</text>
+<path class="arrow" d="M1010 345 L1010 405"/>
+<text class="small" x="600" y="505">Portfolio-safe architecture — production identifiers, customer data and proprietary configuration omitted.</text>
+</svg>

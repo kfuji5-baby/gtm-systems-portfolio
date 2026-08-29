@@ -1,0 +1,6 @@
+Customer Name: Haruka Sato
+Email: haruka@example.com
+Phone: 090-0000-0000
+Product: Example Residence
+Inquiry ID: DEMO-2026-001
+Message: I would like to schedule a viewing.
