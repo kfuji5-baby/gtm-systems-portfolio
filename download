@@ -1,5 +1,0 @@
-*.env
-.env
-.DS_Store
-credentials*
-secrets*
