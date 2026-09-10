@@ -1,0 +1,44 @@
+<!-- Portfolio-safe representative UI structure. -->
+<template>
+    <lightning-card title="Customer Master Cockpit">
+        <div class="slds-p-around_medium">
+            <lightning-input
+                label="Customer search"
+                value={query}
+                onchange={handleQueryChange}>
+            </lightning-input>
+
+            <!-- Production UI contains additional sales-facing filters:
+                 owner, status, desired/inquiry/residence areas, rail/station,
+                 property type, budget, activity age, contactability, etc. -->
+
+            <div class="slds-m-top_medium">
+                <lightning-button
+                    label="Reset"
+                    onclick={handleReset}>
+                </lightning-button>
+                <lightning-button
+                    class="slds-m-left_x-small"
+                    variant="brand"
+                    label="Search"
+                    onclick={handleSearch}>
+                </lightning-button>
+            </div>
+
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Searching"></lightning-spinner>
+            </template>
+
+            <template if:true={error}>
+                <div class="slds-text-color_error slds-m-top_medium">{error}</div>
+            </template>
+
+            <template for:each={results} for:item="customer">
+                <article key={customer.id} class="slds-box slds-m-top_small">
+                    <strong>{customer.name}</strong>
+                    <div>{customer.context}</div>
+                </article>
+            </template>
+        </div>
+    </lightning-card>
+</template>
